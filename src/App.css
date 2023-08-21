@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center{
+  position:absolute;
+  width: 100vw;
+  height: 100vh;
+  background-size:cover;
+  background-position:center;
+  background-image: url('./image//img.jpg');
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a{
+  text-decoration: none;
+  color: aliceblue;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.submenu{
+  text-transform: uppercase;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 15px;
+  font-weight: 700;
+  
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  margin-top: 60px;
+  
+}
+
+/* icons */
+.icon{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.bleft{
+ width: 30vw;
+
+  /* background-color: red; */
+  color: rgb(18, 144, 9);
+  position: absolute;
+  bottom: 100px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.play{
+  width: 10vw;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 7px;
+  gap: 15px;
+  
+}
+.play:hover,.apple:hover{
+  background-color:rgb(36, 34, 34);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.apple>span,.play>span{
+  color: aliceblue;
+}
+.apple{
+  gap: 15px;
+  width: 10vw;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 7px;
+}
+
+.arrow{
+  color: green;
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 80px;
+  left: 45vw;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 200ms ease;
+}
+.arrow:hover{
+  transform: rotate(-12deg);
+  font-size: 2.8rem;
+}
+
+.bright{
+  display: block;
+  background-color: black;
+  color: rgb(185, 183, 183);
+  font-size: .6rem;
+  width: 25vw;
+  border: 1px solid rgb(66, 38, 106);
+  position: absolute;
+  bottom: 85px;
+  left: 50%;
+  right: 70vw;
+  
+}
+
+.bcorner{
+  cursor: pointer;
+  font-size: 2.5rem;
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+  /* background-color: rgb(3, 0, 0); */
+  
+  width: 20vw;
+  position: absolute;
+  bottom: 100px;
+  left: 80%;
+  right: 70vw;
+}
+
+
+
+
+
+/* responsive */
+
+@media screen and (min-width:250px) and (max-width:1157px){
+ .submenu{
+  font-size: .6rem;
+  gap: 2px;
+  margin-right: 10px;
+ }
+ .bleft{
+  display: flex;
+  flex-direction: column;
+  left: 35px;
+  width: 15vw;
+ }
+ .play>span{
+font-size: .5rem;
+ }
+ .apple,.play{
+  gap: 1px;
+ }
+ .apple>span{
+font-size: .5rem;
+ }
+
+ .bcorner{
+ 
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  
+  
+  position: absolute;
+  bottom: 100px;
+  left: 90%;
+  
+}
+
+.bright{
+  
+  font-size: .56rem;
+  /* width: 25vw; */
+  
+  
+  left:55%;
+ 
+  
+}
 }
